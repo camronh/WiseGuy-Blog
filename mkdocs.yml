@@ -9,28 +9,42 @@ theme:
     - toc.integrate
     - navigation.top
     - search.suggest
-    - search.highlight
+    - search.highlight    
+    - navigation.indexes
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
   language: en
   palette:
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline 
-        name: Switch to dark mode
-      primary: teal
-      accent: purple 
+    # Dark mode (now first, so it's the default)
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
-      primary: teal
-      accent: lime
+      primary: deep purple
+      accent: cyan
+    # Light mode
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: indigo
+      accent: light blue
 
 plugins:
   - search
   - blog
+  - mkdocs-jupyter
+
+nav:
+  - Home: index.md
+  - Services: services.md
+  - About: about.md
+  - Blog:
+    - Blog: blog/index.md
+    - Experiments:
+      - Overview: experiments/experiments_overview.md
+      - Context Length Experiment: experiments/Context_Length_AppStoreV2.ipynb
 
 extra:
   social:

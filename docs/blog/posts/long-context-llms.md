@@ -1,6 +1,12 @@
 ---
 date: 2023-04-15
 title: The Rise of Long Context LLMs
+description: Explore the benefits and impact of long context Language Models (LLMs) in AI applications across various industries.
+keywords:
+  - Long Context LLMs
+  - AI Applications
+  - Natural Language Processing
+  - Machine Learning
 ---
 
 # The Rise of Long Context LLMs
