@@ -1,6 +1,6 @@
 ---
 date: 2023-04-15
-title: The Rise of Long Context LLMs
+title: The Rise of Long Context LLM
 ---
 
 # The Rise of Long Context LLMs
