@@ -4,14 +4,30 @@ site_url: https://camronh.github.io/WiseGuy-Blog/
 theme:
   name: material
   features:
-    - navigation.tabs
-    - navigation.sections
-    - toc.integrate
-    - navigation.top
-    - search.suggest
-    - search.highlight    
-    - navigation.indexes
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
     - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
     - content.code.annotation
     - content.code.copy
   language: en
@@ -33,27 +49,27 @@ theme:
 
 plugins:
   - search
-  - blog
+  - blog:
+        blog_toc: true
   - mkdocs-jupyter
 
 nav:
   - Home: index.md
-  - Services: services.md
-  - About: about.md
-  - Blog:
-    - Blog: blog/index.md
+  - Blog Posts:
+    - Blogs: blog/index.md
     - Experiments:
       - Overview: experiments/experiments_overview.md
       - Context Length Experiment: experiments/Context_Length_AppStoreV2.ipynb
+  - Services: services.md
 
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/YourGitHubUsername
+      link: https://github.com/camronh
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/YourTwitterHandle
+      link: https://twitter.com/CamBrazy3
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/YourLinkedInProfile
+      link: https://linkedin.com/in/CamronHaider
 
 markdown_extensions:
   - pymdownx.highlight:
