@@ -8,4 +8,4 @@ We're AI consultants and researchers specializing in developing enterprise-ready
 
 ## Need AI expertise?
 
-If you're looking to implement or improve AI systems in your organization, let's talk. We work with startups and established companies to operationalize AI and LLMs.
+If you're looking to implement or improve AI systems in your organization or if you just want to chat about AI, [reach out!](https://5lftoxf2fn2.typeform.com/to/vnNCVpu8)
