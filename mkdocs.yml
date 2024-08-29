@@ -61,10 +61,11 @@ plugins:
 
 nav:
   - Home: index.md
-  - Blog Posts:
+  - Blog:
     - Blogs: blog/index.md
-    - Experiments:
-      - Context Length Experiment: experiments/Context_Length_AppStoreV2.ipynb
+  - Experiments:
+    - Overview: experiments/index.md
+    - Context Length Experiment: experiments/Context_Length_AppStoreV2.ipynb
   # - Get In Touch: contact.md
 
 extra:
