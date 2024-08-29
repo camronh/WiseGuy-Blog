@@ -1,5 +1,7 @@
-site_name: WiseGuy AI Consulting
+site_name: WiseGuy AI
 site_url: https://camronh.github.io/WiseGuy-Blog/
+site_description: AI Dev Blog
+site_author: WiseGuy AI Team
 
 theme:
   name: material
@@ -32,35 +34,38 @@ theme:
     - content.code.copy
   language: en
   palette:
-    # Dark mode (now first, so it's the default)
-    - scheme: slate 
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
-      primary: deep purple
-      accent: cyan
-    # Light mode
-    - scheme: default
+      primary: teal 
+      accent: deep purple
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-      primary: indigo
-      accent: light blue
+      primary: teal 
+      accent: deep purple
 
 plugins:
   - search
   - blog:
         blog_toc: true
+  # - tags
   - mkdocs-jupyter
+  - social
 
 nav:
   - Home: index.md
   - Blog Posts:
     - Blogs: blog/index.md
     - Experiments:
-      - Overview: experiments/experiments_overview.md
       - Context Length Experiment: experiments/Context_Length_AppStoreV2.ipynb
-  - Services: services.md
+  - Get In Touch: contact.md
 
 extra:
   social:
@@ -68,8 +73,7 @@ extra:
       link: https://github.com/camronh
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/CamBrazy3
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/CamronHaider
+  generator: true
 
 markdown_extensions:
   - pymdownx.highlight:
