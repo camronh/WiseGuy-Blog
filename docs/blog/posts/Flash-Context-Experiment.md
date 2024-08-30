@@ -13,6 +13,7 @@ categories:
   - Gemini
   - OpenAI
   - LangChain
+  - Experiment
 ---
 
 # Should You Even Trust Gemini’s Million-Token Context Window?
