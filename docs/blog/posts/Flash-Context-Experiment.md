@@ -17,6 +17,8 @@ categories:
 
 # Should You Even Trust Gemini’s Million-Token Context Window?
 
+![Haystack Made with GPT-4o](../../img/haystack.png)
+
 [📖 Read On Medium](https://medium.com/@camronhaider/should-geminis-million-token-context-be-trusted-30be97c5109d)
 
 Imagine you’re tasked with analyzing your company’s entire database — millions of customer interactions, years of financial data, and countless product reviews — to extract meaningful insights. You turn to AI for help. You shove all of the data into Google Gemini 1.5, with its new 1 million token context length and start making requests, which it seems to be solving. But a nagging question persists: Can you trust the AI to accurately process and understand all of this information? How confident can you be in its analysis when it’s dealing with such a vast amount of data? Are you going to have to dig through a million tokens worth of data to validate each answer?
