@@ -13,6 +13,7 @@ categories:
   - AI Applications
   - Personal Finance
   - Technology Experiments
+og_image: ./financial_analysis/robotaccountant.png
 ---
 
 # I Handed Over My Finances to the Top 3 AI Models
