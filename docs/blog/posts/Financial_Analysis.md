@@ -39,36 +39,34 @@ The analysis began promisingly. ChatGPT quickly parsed my CSV file and showed me
 
 It then produced a "Financial Summary" with my total income, expenses, and net balance. However, the numbers were significantly off base—likely because it counted both credit card charges and their payments as separate expenses.
 
-Next came a detailed breakdown of spending by category, presented in an interactive dataframe. The dataframe even had an expand feature for a full-screen view with cell selection capabilities:
+Next came a breakdown of spending by category, presented in an interactive spreadsheet. The spreadsheet even had an expand feature for a full-screen view with cell selection capabilities:
 
 ![Expanded view of spending categories](./financial_analysis/spending_breakdown.png)
 
 I love the way ChatGPT presents the data in a spreadsheet-like format. It's easy to see the data and it's easy to interact with. The data wasn't particularly useful since I already have RocketMoney for category breakdowns, plus it includes credit card payments and transfers. ChatGPT wrapped up with some suggestions for next steps:
 
-```markdown
-I've provided you with a summary of your financial situation over the last 90 days, including total income, expenses, net balance, and a detailed breakdown of spending by category.
-
-Here's what I'll do next for your wealth plan:
-
-1. Spending Analysis:
-
-   - Dive deeper into your largest expense categories and provide insights on where you could cut back to save more.
-
-2. Savings and Investment Strategy:
-
-   - Based on your net balance, I'll suggest a strategy for increasing savings or investments to help grow your wealth.
-
-3. Debt Management:
-   - I'll assess any debt-related payments, such as credit card expenses, to determine the best approach to reduce interest payments and manage liabilities effectively.
-
-Would you like me to focus on any specific area first, or do you have particular goals (e.g., saving for a big purchase, paying down debt, growing investments) in mind for your wealth plan?
-```
+> I've provided you with a summary of your financial situation over the last 90 days, including total income, expenses, net balance, and a detailed breakdown of spending by category.
+>
+> Here's what I'll do next for your wealth plan:
+>
+> 1. Spending Analysis:
+>
+>    - Dive deeper into your largest expense categories and provide insights on where you could cut back to save more.
+>
+> 2. Savings and Investment Strategy:
+>
+>    - Based on your net balance, I'll suggest a strategy for increasing savings or investments to help grow your wealth.
+>
+> 3. Debt Management:
+>    - I'll assess any debt-related payments, such as credit card expenses, to determine the best approach to reduce interest payments and manage liabilities effectively.
+>
+> Would you like me to focus on any specific area first, or do you have particular goals (e.g., saving for a big purchase, paying down debt, growing investments) in mind for your wealth plan?
 
 Wanting to dig deeper, I prompted:
 
 > "Where should I start to reduce my spending? I spend too much!"
 
-Without doing any further python analysis, ChatGPT jumped straight into suggestions—and this is where things got interesting, and not in a good way.
+**Without doing any further python analysis**, ChatGPT jumped straight into suggestions—and this is where things got interesting, and not in a good way.
 
 First, it identified my biggest expense category as "Credit Card Payments," which shows a fundamental misunderstanding—credit card payments aren't really an expense category, they're just transfers to pay down credit balances. It was essentially double-counting expenses: once when I used the credit card, and again when I paid the bill.
 
@@ -76,15 +74,12 @@ Next, it focused on bills and utilities as my second-highest expense category. W
 
 Then came the food spending advice:
 
-```markdown
-### 3. Dining & Drinks - $XXXX
-
-- What's happening: This is one of the most common areas where expenses accumulate because of convenience.
-- What to do:
-  - Cut Back on Eating Out: Allocate a fixed budget for eating out each week. Consider cooking at home or meal prepping more often, especially given your goal of saving by meal prepping.
-  - Plan Meals: Develop simple meal plans with affordable ingredients, focusing on dishes that offer variety yet are easy to prepare. This can help avoid impulse restaurant spending.
-  - Limit High-Cost Visits: Target reducing high-cost visits (e.g., fine dining) and focus on affordable alternatives like picnics or home-prepared meals.
-```
+> #### 3. Dining & Drinks - $XXXX
+> - What's happening: This is one of the most common areas where expenses accumulate because of convenience.
+> - What to do:
+>   - Cut Back on Eating Out: Allocate a fixed budget for eating out each week. Consider cooking at home or meal prepping more often, especially given your goal of saving by meal prepping.
+>   - Plan Meals: Develop simple meal plans with affordable ingredients, focusing on dishes that offer variety yet are easy to prepare. This can help avoid impulse restaurant spending.
+>   - Limit High-Cost Visits: Target reducing high-cost visits (e.g., fine dining) and focus on affordable alternatives like picnics or home-prepared meals.
 
 The advice I received was surprisingly generic. ChatGPT seems to deliberately limit the amount of data it processes (maybe to conserve tokens?) which leads to surface-level analysis and cookie-cutter suggestions like:
 
@@ -118,70 +113,62 @@ Next, it provided a detailed spending breakdown, avoiding the common pitfall of 
 
 Here's when Claude started to impress me—in the details:
 
-```markdown
-Spending Patterns:
-
-- Essential Spending: $XXXX (58%)
-- Discretionary Spending: $XXXX (42%)
-- Heavy reliance on food delivery services (frequent Uber Eats charges)
-- Multiple subscription services totaling approximately $XXX/month
-```
+> Spending Patterns:
+> - Essential Spending: $XXXX (58%)
+> - Discretionary Spending: $XXXX (42%)
+> - Heavy reliance on food delivery services (frequent Uber Eats charges)
+> - Multiple subscription services totaling approximately $XXX/month
 
 Claude understood what was essential and what was discretionary, which shows a level of understanding that goes beyond the surface-level categories. It immediately called out my frequent Uber Eats charges and doesn't include credit card payments or transfers as in the spending breakdown.
 
 It even called out specific "Red Flags":
 
-```markdown
-RED FLAGS:
-
-- High Food Costs: Spending $XXXX/month on food, with about 67% on dining out/delivery
-- Numerous Subscriptions: Multiple overlapping services (Apple, Claude, OpenAI, etc.)
-- High discretionary spending ratio
-```
+> RED FLAGS:
+> - High Food Costs: Spending $XXXX/month on food, with about 67% on dining out/delivery
+> - Numerous Subscriptions: Multiple overlapping services (Apple, Claude, OpenAI, etc.)
+> - High discretionary spending ratio
 
 It is not wrong here, I do sign up for every AI product that I hear about. Busted!
 
 Claude then provided a detailed action plan:
 
-```markdown
-RECOMMENDATIONS:
+> ## RECOMMENDATIONS:
+>
+> ### Immediate Actions:
+>
+> - Audit Subscriptions:
+>   - Consolidate AI services (currently using Claude, OpenAI, and others)
+>   - Review multiple Apple subscriptions
+>   - Evaluate necessity of multiple cloud services
+>
+> - Food Budget Optimization:
+>   - Reduce Uber Eats usage (currently spending heavily here)
+>   - Increase grocery shopping vs. delivery
+>   - Target reducing food expenses to $XXXX/month
+>
+> ### Medium-term Financial Goals:
+>
+> - Build Emergency Fund:
+>   - Target: 6 months of essential expenses ($XXXX)
+>   - Current high income provides good opportunity for savings
+>
+> - Implement 50/30/20 Budget:
+>   - 50% needs ($XXXX)
+>   - 30% wants ($XXXX)
+>   - 20% savings ($XXXX)
+>
+> ### Investment Strategy:
+>
+> - Maximize Tax-Advantaged Accounts:
+>   - 401(k) if available through employer
+>   - Roth IRA ($XXXX/year)
+>   - HSA if eligible
+>
+> - Consider diversifying investments:
+>   - Currently see some crypto investments
+>   - Recommend broader diversification into index funds
+>   - Consider real estate investment given high income
 
-### Immediate Actions:
-
-- Audit Subscriptions:
-
-  - Consolidate AI services (currently using Claude, OpenAI, and others)
-  - Review multiple Apple subscriptions
-  - Evaluate necessity of multiple cloud services
-
-- Food Budget Optimization:
-  - Reduce Uber Eats usage (currently spending heavily here)
-  - Increase grocery shopping vs. delivery
-  - Target reducing food expenses to $XXXX/month
-
-### Medium-term Financial Goals:
-
-- Build Emergency Fund:
-
-  - Target: 6 months of essential expenses ($XXXX)
-  - Current high income provides good opportunity for savings
-
-- Implement 50/30/20 Budget:
-  - 50% needs ($XXXX)
-  - 30% wants ($XXXX)
-  - 20% savings ($XXXX)
-
-### Investment Strategy:
-
-- Maximize Tax-Advantaged Accounts:
-  - 401(k) if available through employer
-  - Roth IRA ($XXXX/year)
-  - HSA if eligible
-- Consider diversifying investments:
-  - Currently see some crypto investments
-  - Recommend broader diversification into index funds
-  - Consider real estate investment given high income
-```
 
 I then asked for visualizations, and Claude delivered with beautiful charts showing my spending patterns:
 
