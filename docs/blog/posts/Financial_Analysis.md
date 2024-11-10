@@ -172,7 +172,7 @@ Claude then provided a detailed action plan:
 
 I then asked for visualizations, and Claude delivered with beautiful charts showing my spending patterns:
 
-![Claude's food spending analysis visualizations](./financial_analysis/claude_visualizations.png)
+![Claude's food spending analysis visualizations](./financial_analysis/food_visualization.png)
 
 I then challenged Claude to show me potential savings from cutting out UberEats and limiting dining out. It responded with a detailed plan and an interactive visualization that you can [check out here](https://claude.site/artifacts/541984b5-0aaa-49ef-a5a8-bfc28deb3bc5)!
 
