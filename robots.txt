@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://camronh.github.io/WiseGuy-Blog/sitemap.xml
