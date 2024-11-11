@@ -1,7 +1,7 @@
 ---
 date: 2024-11-10
-title: "I Handed Over My Finances to the Top 3 AI Models"
-description: "Can AI manage your money better than you can? I exported my financial transactions and put three leading AI models—ChatGPT, Claude, and Gemini—to the test. Only one AI really delivered."
+title: "Handing Over My Wallet to AI: Which Model Gave the Best Financial Advice?"
+description: "I exported my financial transactions to ChatGPT, Claude, and Gemini to see which AI model gave the best financial advice. Only one AI could handle it."
 keywords:
   - Personal Finance
   - AI Analysis
@@ -13,38 +13,37 @@ categories:
   - AI Applications
   - Personal Finance
   - Technology Experiments
-og_image: ./financial_analysis/robotaccountant.png
 ---
 
-# I Handed Over My Finances to the Top 3 AI Models
+# Handing Over My Wallet to AI: Which Model Gave the Best Financial Advice?
 
 ![AI Financial Advisors](./financial_analysis/robotaccountant.png)
 
-Managing personal finances isn't just about numbers—it's about making countless decisions every day, from the morning coffee run to long-term investment strategies. As artificial intelligence continues to reshape our world, I wondered: could AI help make these decisions easier? To find out, I conducted an experiment that would either validate AI's potential as a financial advisor or expose its limitations.
+Ever looked at your bank account and thought "I should probably talk to a personal financial advisor" — but then remembered that good advisors charge anywhere from $150 to $300 per hour? For most of us, professional financial advice feels like a luxury we can't justify. But we shouldn't have to wait until we're rich to get good financial advice!
 
-I exported 90 days of my personal financial transactions from RocketMoney and presented them to three AI heavyweights: ChatGPT, Claude, and Gemini. Each AI was tasked with analyzing my spending habits and creating a comprehensive financial plan. The results? Let's just say not all AI models are created equal when it comes to number crunching.
+That's where AI might change everything. Instead of paying hundreds per hour for financial advice, what if you could get personalized insights for the cost of a ChatGPT Plus subscription? To test this possibility, I connected [RocketMoney](https://www.rocketmoney.com/) to all my accounts—checking, credit cards, investments, the works—and exported 90 days of transaction data. Then I fed this financial snapshot to three AI heavyweights: [ChatGPT](https://openai.com/), [Claude](https://www.anthropic.com/claude), and [Gemini](https://gemini.google.com/).
 
-## The Challenge
+But this isn't just about which AI is "smarter." Each platform brings different tools and features that the model can use to analyze the data. I asked each to analyze my spending and create a comprehensive financial plans and reports, just like a human advisor would.
 
 I kept it simple. Each AI received the same prompt:
 
 > You are an expert personal finance manager and wealth advisor. I have included my last 90 days of transactions. I need you to do an analysis of my current financial situation and give me a report and wealth plan. Keep in mind this csv is a consolidation for all of my accounts and includes transfers and credit card payments provided by RocketMoney.
 
-Let's see how each AI tackled this challenge.
+The results? Let's just say one AI saved me more money in potential insights than a year's worth of its subscription costs—while another couldn't even handle the basics. Here's what happened when I turned my finances over to the machines.
 
 ## ChatGPT: A Mixed Bag of Analysis
 
-ChatGPT allows you to upload files, but their strongest model (GPT-o1) doesn't support file uploads yet. So I opted to use GPT-4o with Canvas, as my model of choice.
+Everybody knows ChatGPT already, so I'll skip the introduction. ChatGPT allows you to upload files, but their strongest model (GPT-o1) doesn't support file uploads yet so I opted to use GPT-4o as my model of choice.
 
-The analysis began promisingly. ChatGPT quickly parsed my CSV file and showed me its understanding of the data structure by listing the columns.
+The analysis began promisingly. ChatGPT used python to quickly parse my CSV file and showed me its understanding of the data structure by listing the columns.
 
-It then produced a "Financial Summary" with my total income, expenses, and net balance. However, the numbers were significantly off base—likely because it counted both credit card charges and their payments as separate expenses.
+It then produced a "Financial Summary" with my total income, expenses, and net balance. The numbers were significantly off base—likely because it counted both credit card charges and their payments as separate expenses.
 
-Next came a breakdown of spending by category, presented in an interactive spreadsheet. The spreadsheet even had an expand feature for a full-screen view with cell selection capabilities:
+Next came a breakdown of spending by category, presented in an interactive spreadsheet. The spreadsheet even had an Expand feature for a full-screen view that even let you select and reference specific cells:
 
 ![Expanded view of spending categories](./financial_analysis/spending_breakdown.png)
 
-I love the way ChatGPT presents the data in a spreadsheet-like format. It's easy to see the data and it's easy to interact with. The data wasn't particularly useful since I already have RocketMoney for category breakdowns, plus it includes credit card payments and transfers. ChatGPT wrapped up with some suggestions for next steps:
+I do love the way ChatGPT presents the data in a spreadsheet-like format. It's easy to see the data and it's easy to interact with. The data wasn't particularly useful since I already have RocketMoney for category breakdowns, plus it includes credit card payments and transfers. ChatGPT wrapped up with some suggestions for next steps:
 
 > I've provided you with a summary of your financial situation over the last 90 days, including total income, expenses, net balance, and a detailed breakdown of spending by category.
 >
